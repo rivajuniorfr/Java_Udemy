@@ -6,7 +6,7 @@ public class FuncoesString {
 	
 	public static void main(String[] args) {
 		
-		String original = "abcde ABC RSTU jlmno ";
+		String original = "abcde ABC RSTU bcjlmno ";
 		
 		String s1 = original.toLowerCase();
 		String s2 = original.toUpperCase();
@@ -15,6 +15,8 @@ public class FuncoesString {
 		String s5 = original.substring(0,10); // gera uma novo String a partir do caractere 0 ao 10
 		String s6 = original.replace("a","x");// troca o A por X
 		String s7 = original.replace("ABC","XYZ");
+		int i = original.indexOf("bc"); // retorna a posiçao do bc
+		int j = original.lastIndexOf("bc"); // retopna a ultima posiçao do bc
 		
 		System.out.println("Original: -" + original + "-");
 		System.out.println("toLowerCase: -"+ s1 + "-");
@@ -24,6 +26,8 @@ public class FuncoesString {
 		System.out.println("substring 0 ao 10: - " + s5 + "-"); 
 		System.out.println("Replace 1: - " + s6 + "-"); 
 		System.out.println("Replace 2: - " + s7 + "-");
+		System.out.println("indexOf: - " + i + "-");
+		System.out.println("lastIndexof: - " + j + "-");
 
 	}
 
